@@ -1,0 +1,28 @@
+<h1>Students Show in /pages/landing</h1>
+
+  <table class="table table-light">
+
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Email</th>
+        <th colspan="4"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @students.each do |student| %>
+      
+        <tr>
+            <td><%= student.name %></td>
+            <td><%= student.age %></td>
+            <td><%= student.email %></td>
+        </tr>
+      
+      <% end %>
+    </tbody>
+  
+  </table>
+
+<br>
